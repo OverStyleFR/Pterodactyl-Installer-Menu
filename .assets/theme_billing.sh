@@ -19,7 +19,34 @@ fi
 
 # Le reste du script ici
 
-######################################### Installation Plugin ShowPassword.sh ###########################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 while true; do
     # Affichage du menu
     echo "                +-------------+"
@@ -30,27 +57,19 @@ while true; do
     echo "  |     2. Ne pas installer ShowPassword     |"
     echo "  +-------------------------- ---------------+"
 
+
     # Lecture du choix de l'utilisateur
     read -p "Choisissez une option (1-2) : " choix
 
     # Traitement du choix
     case $choix in
         
-        1)
+       1)
             echo "Installation du Plugin Show Password."
             # Ajoutez le code correspondant à l'Option 1 ici
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/plugin_showpassword.sh)
             ;;
         2)
-            echo "Au revoir !"
-            exit 0
-            ;;
-        *)
-            echo "Choix non valide. Veuillez entrer un numéro entre 1 et 2."
-            ;;
-    esac
-done
-
 ######################################### DOWNLOAD & EXTRACT ############################################
 
 ### DOSSIER TEMPORAIRE ###
@@ -121,3 +140,9 @@ echo "${VIOLET}${BOLD}Re-build du thème en cour...${RESET}"
 yarn build:production > /dev/null 2>&1
 echo "${GREEN}${BOLD}Build Terminé !.${RESET}"
 echo ""
+            ;;
+        *)
+            echo "Choix non valide. Veuillez entrer un numéro entre 1 et 2."
+            ;;
+    esac
+done
