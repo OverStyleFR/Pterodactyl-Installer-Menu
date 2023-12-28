@@ -1,19 +1,17 @@
 #!/bin/bash
 
 # Définir les couleurs
-GREEN=$(tput setaf 2)
-RED=$(tput setaf 1)
-BLUE=$(tput setaf 4)
-VIOLET=$(tput setaf 5)
-BOLD=$(tput bold)
-RESET=$(tput sgr0)
+# ... (restez inchangés)
 
 ########################################## CHOIX D'INSTALLATION ##########################################
 
-echo "${BOLD}Choisissez l'installation :${RESET}"
-echo "1. Installer le plugin 'ShowPassword'"
-echo "2. Installer le thème 'Billing' sans le plugin 'ShowPassword'"
-read -p "Entrez votre choix (1 ou 2) : " choix
+choix=""
+while [[ "$choix" != "1" && "$choix" != "2" ]]; do
+    echo "${BOLD}Choisissez l'installation :${RESET}"
+    echo "1. Installer le plugin 'ShowPassword'"
+    echo "2. Installer le thème 'Billing' sans le plugin 'ShowPassword'"
+    read -p "Entrez votre choix (1 ou 2) : " choix
+done
 
 ######################################### INSTALLATION CHOISIE ############################################
 
@@ -22,7 +20,6 @@ if [ "$choix" == "1" ]; then
     wget -O plugin_showpassword.sh https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/plugin_showpassword.sh
     bash plugin_showpassword.sh
 elif [ "$choix" == "2" ]; then
-    # Début de l'installation du thème 'Billing' sans le plugin 'ShowPassword'
     dossier="/tmp/pterodactylthemeinstaller"
 
     if [ -d "$dossier" ]; then
@@ -72,7 +69,6 @@ elif [ "$choix" == "2" ]; then
     yarn build:production > /dev/null 2>&1
     echo "${GREEN}${BOLD}Build Terminé !.${RESET}"
     echo ""
-    # Fin de l'installation du thème 'Billing' sans le plugin 'ShowPassword'
 else
     echo "${RED}${BOLD}Choix invalide.${RESET}"
     exit 1
