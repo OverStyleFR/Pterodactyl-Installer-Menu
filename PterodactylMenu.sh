@@ -60,19 +60,19 @@ while true; do
         2)
             echo "Installation du thème Stellar v3.3."
             # Ajoutez le code correspondant à l'Option 2 ici
-            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/main/.assets/initialisation.sh)
-            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/main/.assets/theme_stellar.sh)
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/initialisation.sh)
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_stellar.sh)
             ;;
         3)
             echo "Installation du thème Enigma v3.9."
             # Ajoutez le code correspondant à l'Option 3 ici
-            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/main/.assets/initialisation.sh)
-            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/main/.assets/theme_enigma.sh)
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/initialisation.sh)
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_enigma.sh)
             ;;
         4)
             echo "Installation du thème Billing Module"
             # Ajoutez le code correspondant à l'Option 4 ici
-            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/main/.assets/theme_billing.sh)
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_billing.sh)
             ;;
         5)
             echo "Ré-installer le thème de Pterodactyl. (RESET UI)"
