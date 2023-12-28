@@ -19,6 +19,29 @@ fi
 
 # Le reste du script ici
 
+######################################### Installation Plugin ShowPassword.sh ###########################
+
+    # Lecture du choix de l'utilisateur
+    read -p "Choisissez une option (1-6) : " choix
+
+    # Traitement du choix
+    case $choix in
+        
+        1)
+            echo "Installation du Plugin Show Password."
+            # Ajoutez le code correspondant à l'Option 1 ici
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/plugin_showpassword.sh)
+            ;;
+        2)
+            echo "Au revoir !"
+            exit 0
+            ;;
+        *)
+            echo "Choix non valide. Veuillez entrer un numéro entre 1 et 2."
+            ;;
+    esac
+done
+
 ######################################### DOWNLOAD & EXTRACT ############################################
 
 ### DOSSIER TEMPORAIRE ###
