@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # Définir les couleurs
-# ... (restez inchangés)
+GREEN=$(tput setaf 2)
+RED=$(tput setaf 1)
+BLUE=$(tput setaf 4)
+VIOLET=$(tput setaf 5)
+BOLD=$(tput bold)
+RESET=$(tput sgr0)
 
 ########################################## CHOIX D'INSTALLATION ##########################################
 
