@@ -31,7 +31,7 @@ done
 
 if [ "$choix" == "1" ]; then
     echo "${BOLD}Téléchargement du script d'installation du plugin 'ShowPassword'...${RESET}"
-    wget -O plugin_showpassword.sh https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/plugin_showpassword.sh
+    wget -O https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/plugin_showpassword.sh
     bash plugin_showpassword.sh
 elif [ "$choix" == "2" ]; then
     dossier="/tmp/pterodactylthemeinstaller"
