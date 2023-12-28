@@ -18,7 +18,56 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Le reste du script ici
-https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/plugin_showpassword.sh
+
+    dossier="/tmp/pterodactylthemeinstaller"
+
+    if [ -d "$dossier" ]; then
+        if [ -z "$(ls -A $dossier)" ]; then
+            echo ""
+            echo "${BOLD}Le dossier existe mais est vide.${RESET}"
+            echo ""
+        else
+            rm -r "$dossier"/*
+            echo ""
+            echo "${RED}${BOLD}Le contenu du dossier a été supprimé avec succès.${RESET}"
+            echo ""
+        fi
+    else
+        mkdir -p "$dossier"
+        echo ""
+        echo "${GREEN}${BOLD}Le dossier a été créé avec succès.${RESET}"
+        echo ""
+    fi
+
+    cd /tmp/pterodactylthemeinstaller
+    echo ""
+    echo "${BOLD}Téléchargement du thème :${RESET}"
+    echo ""
+    wget -O Billing.zip https://curl.libriciel.fr/OeyR94lTmI/Billing.zip
+
+    echo ""
+    echo "${BOLD}Extraction du thème...${RESET}"
+
+    unzip Billing.zip > /dev/null 2>&1
+    echo "${BOLD}Déplacement du thème...${RESET}"
+    rsync -a --remove-source-files app config database public resources routes tailwind.config.js /var/www/pterodactyl
+    echo ""
+
+    cd /var/www/pterodactyl
+
+    echo "${BOLD}Installation de 'cross-env' via yarn...${RESET}"
+    yarn add cross-env > /dev/null 2>&1
+
+    echo "${BOLD}Mise à jour de NPX...${RESET}"
+    npx update-browserslist-db@latest > /dev/null 2>&1
+
+    echo "${BOLD}Application du thème...${RESET}"
+    php artisan billing:install stable <<< wemxgay
+
+    echo "${VIOLET}${BOLD}Re-build du thème en cours...${RESET}"
+    yarn build:production > /dev/null 2>&1
+    echo "${GREEN}${BOLD}Build Terminé !.${RESET}"
+    echo ""
 
 
 # Changement de répertoire
