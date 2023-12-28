@@ -20,9 +20,16 @@ fi
 # Le reste du script ici
 
 ######################################### Installation Plugin ShowPassword.sh ###########################
+    echo "                +-------------+"
+    echo "                |   Plugin :  |"
+    echo "  +-------------+------------ +--------------+"
+    echo "  | 1. Installer ShowPassword | Ptero 11.x.x |"
+    echo "  +-------------+------------ +--------------+"
+    echo "  |     2. Ne pas installer ShowPassword     |"
+    echo "  +-------------+------------ +--------------+"
 
     # Lecture du choix de l'utilisateur
-    read -p "Choisissez une option (1-6) : " choix
+    read -p "Choisissez une option (1-2) : " choix
 
     # Traitement du choix
     case $choix in
