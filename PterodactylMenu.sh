@@ -47,7 +47,7 @@ while true; do
 
 
     # Lecture du choix de l'utilisateur
-    read -p "Choisissez une option (1-6) : " choix
+    read -p "Choisissez une option (1-7) : " choix
 
     # Traitement du choix
     case $choix in
@@ -75,22 +75,22 @@ while true; do
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_billing.sh)
             ;;
         5)
-            echo "Ré-installer le thème de Pterodactyl. (RESET UI)"
-            echo "N'affecte pas les machines déjà installer"
-            # Ajoutez le code correspondant à l'Option 5 ici
-            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/AutoScriptBash/main/pterodactylpanelreinstall.sh)
+            echo "Installation du thème Carbon v1.6.6"
+            # Ajoutez le code correspondant à l'Option 4 ici
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_carbon.sh)
             ;;
         6)
             echo "Au revoir !"
             exit 0
             ;;
         7)
-            echo "Installation du thème Carbon v1.6.6"
-            # Ajoutez le code correspondant à l'Option 4 ici
-            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_carbon.sh)
+            echo "Ré-installer le thème de Pterodactyl. (RESET UI)"
+            echo "N'affecte pas les machines déjà installer"
+            # Ajoutez le code correspondant à l'Option 5 ici
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/AutoScriptBash/main/pterodactylpanelreinstall.sh)
             ;;
         *)
-            echo "Choix non valide. Veuillez entrer un numéro entre 1 et 5."
+            echo "Choix non valide. Veuillez entrer un numéro entre 1 et 7."
             ;;
     esac
 done
