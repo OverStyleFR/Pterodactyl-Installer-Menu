@@ -81,14 +81,14 @@ while true; do
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_carbon.sh)
             ;;
         6)
-            echo "Au revoir !"
-            exit 0
-            ;;
-        7)
             echo "Ré-installer le thème de Pterodactyl. (RESET UI)"
             echo "N'affecte pas les machines déjà installer"
             # Ajoutez le code correspondant à l'Option 5 ici
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/AutoScriptBash/main/pterodactylpanelreinstall.sh)
+            ;;
+        7)
+            echo "Au revoir !"
+            exit 0
             ;;
         *)
             echo "Choix non valide. Veuillez entrer un numéro entre 1 et 7."
