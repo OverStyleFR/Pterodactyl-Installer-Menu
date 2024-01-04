@@ -84,6 +84,11 @@ while true; do
             echo "Au revoir !"
             exit 0
             ;;
+        7)
+            echo "Installation du thème Carbon v1.6.6"
+            # Ajoutez le code correspondant à l'Option 4 ici
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_carbon.sh)
+            ;;
         *)
             echo "Choix non valide. Veuillez entrer un numéro entre 1 et 5."
             ;;
