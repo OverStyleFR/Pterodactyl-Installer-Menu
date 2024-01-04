@@ -62,7 +62,7 @@ echo "${BOLD}Extraction du thème...${RESET}"
 
 unzip carbon-v1.6.6 > /dev/null 2>&1
 echo "${BOLD}Déplacement du thème...${RESET}"
-rsync -a --remove-source-files resources public config /var/www/pterodactyl
+rsync -a --remove-source-files pterodactyl/resources pterodactyl/public pterodactyl/config /var/www/pterodactyl
 echo ""
 
 ########################################## BUILD ########################################################
