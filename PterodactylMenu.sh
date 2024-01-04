@@ -37,14 +37,15 @@ while true; do
     echo "  | 3. Installer Enigma-V3.9  | Ptero 11.x.x |"
     echo "  |                           |              |"
     echo "  | 4. Installer Billing      | Ptero 11.x.x |"
+    echo "  |                           |              |"
+    echo "  | 5. Installer Carbon       | Ptero 11.x.x |"
     echo "+-+---------------------------+--------------+-+"
-    echo "| 5. Re-installer le thème du panel (RESET UI) |"
+    echo "| 6. Re-installer le thème du panel (RESET UI) |"
     echo "| ├ N'affecte pas les machines déjà installer  |"
     echo "| └ Aucune perte de sauvegarde                 |"
     echo "+---------------+------------+-----------------+"
-    echo "                | 6. Quitter |"
+    echo "                | 7. Quitter |"
     echo "                +------------+"
-
 
     # Lecture du choix de l'utilisateur
     read -p "Choisissez une option (1-7) : " choix
