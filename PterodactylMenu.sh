@@ -19,8 +19,6 @@ fi
 
 # Le reste du script ici
 
-clear
-
 while true; do
     # Affichage du menu
     echo "                +------------+"
