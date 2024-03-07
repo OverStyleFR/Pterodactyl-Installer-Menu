@@ -116,7 +116,7 @@ ${couleur_panel}+-----------------------------------------------+
 +-----------------------------------------------+
 | ${couleur_reinitialisation}${couleur_chiffres}8. Quitter${couleur_panel}                                    |
 +-----------------------------------------------+${couleur_reset}"
-
+read -p "Choisissez une option (1-7) : " choix
 
 
     case $choix in
