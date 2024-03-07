@@ -28,7 +28,9 @@ while true; do
     echo -e "| \e[1;36m2. Installer MySQL et PhpMyAdmin              \e[1;34m|"
     echo -e "|   \e[1;33m- (Dernière Version)                        \e[1;34m|"
     echo -e "+-----------------------------------------------+"
-    echo ""
+    echo -e "                         \e[1;36m+"
+    echo -e "                         \e[1;36m|"
+    echo -e "                         \e[1;36mV""
     echo -e "\e[1;34m+-----------------------------------------------+"
     echo -e "|              \e[1;32mPterodactyl Thème\e[1;34m :               |"
     echo -e "+-----------------------------------------------+"
@@ -37,7 +39,9 @@ while true; do
     echo -e "| \e[1;36m5. Installer Billing           \e[1;34m|\e[1;36m Ptero 11.x.x\e[1;34m |"
     echo -e "| \e[1;36m6. Installer Carbon            \e[1;34m|\e[1;36m Ptero 11.x.x\e[1;34m |"
     echo -e "+-----------------------------------------------+"
-    echo -e ""
+    echo -e "                         \e[1;36m+"
+    echo -e "                         \e[1;36m|"
+    echo -e "                         \e[1;36mV""
     echo -e "+-----------------------------------------------+"
     echo -e "|             \e[1;32mRéinitialisation\e[1;34m :                 |"
     echo -e "+-----------------------------------------------+"
@@ -47,14 +51,6 @@ while true; do
     echo -e "+-----------------------------------------------+"
     echo -e "| \e[1;31m8. Quitter\e[1;34m                                    |"
     echo -e "+-----------------------------------------------+\e[0m"
-
-    
-    echo -e "          +---------------------+          |"
-    echo -e "          |                     |          |"
-    echo -e "          V                     V          V"
-    echo -e "    +-----------------+ +-------------------+"
-    echo -e "    |                 | |                   |"
-    echo -e "    V                 V V                   V\e[0m"
 
 
     read -p "Choisissez une option (1-7) : " choix
