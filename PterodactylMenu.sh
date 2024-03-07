@@ -62,32 +62,32 @@ while true; do
             bash <(curl -s https://raw.githubusercontent.com/LucieFairePy/Pterodactyl-Installer-FR/main/install.sh)
             ;;
         2)
+            echo "Installer MySQL et PhpMyAdmin"
+            echo "  - (Dernière Version)"
+            bash <(curl -s lien raw ici)
+            ;;
+        3)
             echo "Installation du thème Stellar v3.3."
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/initialisation.sh)
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_stellar.sh)
             ;;
-        3)
+        4)
             echo "Installation du thème Enigma v3.9."
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/initialisation.sh)
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_enigma.sh)
             ;;
-        4)
+        5)
             echo "Installation du thème Billing Module"
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_billing.sh)
             ;;
-        5)
+        6)
             echo "Installation du thème Carbon v1.6.6"
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_carbon.sh)
             ;;
-        6)
+        7)
             echo "Ré-installer le thème de Pterodactyl. (RESET UI)"
             echo "N'affecte pas les machines déjà installer"
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/AutoScriptBash/main/pterodactylpanelreinstall.sh)
-            ;;
-        7)
-            echo "Installer MySQL et PhpMyAdmin"
-            echo "  - (Dernière Version)"
-            bash <(curl -s lien raw ici)
             ;;
         8)
             echo "Au revoir !"
