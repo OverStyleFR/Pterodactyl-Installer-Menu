@@ -104,7 +104,7 @@ read -p "Choisissez une option (1-8) : " choix
             exit 0
             ;;
         *)
-            echo "Choix non valide. Veuillez entrer un numéro entre 1 et 7."
+            echo "Choix non valide. Veuillez entrer un numéro entre 1 et 8."
             ;;
     esac
 done
