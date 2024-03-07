@@ -45,7 +45,7 @@ while true; do
     echo -e "\e[1;34m+-----------------------------------------------+"
     echo -e "|             \e[1;32mRéinitialisation\e[1;34m :                |"
     echo -e "+-----------------------------------------------+"
-    echo -e "| \e[1;36m7. Re-installer le thème du panel (RESET UI)\e[1;34m|"
+    echo -e "| \e[1;36m7. Re-installer le thème du panel (RESET UI)  \e[1;34m|"
     echo -e "|   \e[1;33m- N'affecte pas les machines déjà installées\e[1;34m|"
     echo -e "|   \e[1;33m- Aucune perte de sauvegarde                \e[1;34m|"
     echo -e "+-----------------------------------------------+"
