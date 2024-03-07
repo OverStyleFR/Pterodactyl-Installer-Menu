@@ -53,27 +53,6 @@ while true; do
     #echo -e "+-----------------------------------------------+\e[0m"
     #read -p "Choisissez une option (1-7) : " choix
 
-afficher_menu() {
-    echo -e "$1"
-    echo -e "$2"
-    echo -e "$3"
-    echo -e "$4"
-    echo -e "$5"
-    echo -e "$6"
-    echo -e "$7"
-    echo -e "$8"
-    echo -e "$9"
-    echo -e "${10}"
-    echo -e "${11}"
-    echo -e "${12}"
-    echo -e "${13}"
-    echo -e "${14}"
-    echo -e "${15}"
-    echo -e "${16}"
-    echo -e "${17}"
-    echo -e "${18}"
-}
-
 # Couleurs pour chaque section
 couleur_panel="\e[1;34m"  # Bleu clair
 couleur_panel_texte="\e[1;32m"  # Vert clair
@@ -85,38 +64,39 @@ couleur_chiffres="\e[1;33m"  # Jaune clair
 couleur_reset="\e[0m"  # Réinitialisation de la couleur
 
 # Afficher le menu avec les couleurs
-afficher_menu "
-${couleur_panel}+-----------------------------------------------+
-|              ${couleur_panel_texte}Panel Pterodactyl${couleur_panel} :              |
-+-----------------------------------------------+
-| ${couleur_pterodactyl}${couleur_chiffres}1. Installer Pterodactyl (Dernière Version)   ${couleur_panel}|
-| ${couleur_pterodactyl}${couleur_chiffres}2. Installer MySQL et PhpMyAdmin              ${couleur_panel}|
-|   ${couleur_reinitialisation_texte}- (Dernière Version)                        ${couleur_panel}|
-+-----------------------------------------------+
-                         ${couleur_pterodactyl}+
-                         ${couleur_pterodactyl}|
-                         ${couleur_pterodactyl}↓
-${couleur_panel}+-----------------------------------------------+
-|              ${couleur_pterodactyl_texte}Pterodactyl Thème${couleur_panel} :              |
-+-----------------------------------------------+
-| ${couleur_pterodactyl}${couleur_chiffres}3. Installer Stellar-V3.3      ${couleur_panel}|\e[1;36m Ptero 11.x.x${couleur_panel} |
-| ${couleur_pterodactyl}${couleur_chiffres}4. Installer Enigma-V3.9       ${couleur_panel}|\e[1;36m Ptero 11.x.x${couleur_panel} |
-| ${couleur_pterodactyl}${couleur_chiffres}5. Installer Billing           ${couleur_panel}|\e[1;36m Ptero 11.x.x${couleur_panel} |
-| ${couleur_pterodactyl}${couleur_chiffres}6. Installer Carbon            ${couleur_panel}|\e[1;36m Ptero 11.x.x${couleur_panel} |
-+-----------------------------------------------+
-                         ${couleur_pterodactyl}+
-                         ${couleur_pterodactyl}|
-                         ${couleur_pterodactyl}↓
-${couleur_panel}+-----------------------------------------------+
-|             ${couleur_reinitialisation_texte}Réinitialisation${couleur_panel} :                |
-+-----------------------------------------------+
-| ${couleur_pterodactyl}${couleur_chiffres}7. Re-installer le thème du panel (RESET UI)  ${couleur_panel}|
-|   ${couleur_reinitialisation_texte}- N'affecte pas les machines déjà installées${couleur_panel}|
-|   ${couleur_reinitialisation_texte}- Aucune perte de sauvegarde                ${couleur_panel}|
-+-----------------------------------------------+
-| ${couleur_reinitialisation}${couleur_chiffres}8. Quitter${couleur_panel}                                    |
-+-----------------------------------------------+${couleur_reset}"
-read -p "Choisissez une option (1-7) : " choix
+echo -e "${couleur_panel}+-----------------------------------------------+"
+echo -e "|              ${couleur_panel_texte}Panel Pterodactyl${couleur_panel} :              |"
+echo -e "+-----------------------------------------------+"
+echo -e "| ${couleur_pterodactyl}${couleur_chiffres}1. Installer Pterodactyl (Dernière Version)   ${couleur_panel}|"
+echo -e "| ${couleur_pterodactyl}${couleur_chiffres}2. Installer MySQL et PhpMyAdmin              ${couleur_panel}|"
+echo -e "|   ${couleur_reinitialisation_texte}- (Dernière Version)                        ${couleur_panel}|"
+echo -e "+-----------------------------------------------+"
+echo -e "                         ${couleur_pterodactyl}+"
+echo -e "                         ${couleur_pterodactyl}|"
+echo -e "                         ${couleur_pterodactyl}↓"
+echo -e "${couleur_panel}+-----------------------------------------------+"
+echo -e "|              ${couleur_pterodactyl_texte}Pterodactyl Thème${couleur_panel} :              |"
+echo -e "+-----------------------------------------------+"
+echo -e "| ${couleur_pterodactyl}${couleur_chiffres}3. Installer Stellar-V3.3      ${couleur_panel}|\e[1;36m Ptero 11.x.x${couleur_panel} |"
+echo -e "| ${couleur_pterodactyl}${couleur_chiffres}4. Installer Enigma-V3.9       ${couleur_panel}|\e[1;36m Ptero 11.x.x${couleur_panel} |"
+echo -e "| ${couleur_pterodactyl}${couleur_chiffres}5. Installer Billing           ${couleur_panel}|\e[1;36m Ptero 11.x.x${couleur_panel} |"
+echo -e "| ${couleur_pterodactyl}${couleur_chiffres}6. Installer Carbon            ${couleur_panel}|\e[1;36m Ptero 11.x.x${couleur_panel} |"
+echo -e "+-----------------------------------------------+"
+echo -e "                         ${couleur_pterodactyl}+"
+echo -e "                         ${couleur_pterodactyl}|"
+echo -e "                         ${couleur_pterodactyl}↓"
+echo -e "${couleur_panel}+-----------------------------------------------+"
+echo -e "|             ${couleur_reinitialisation_texte}Réinitialisation${couleur_panel} :                |"
+echo -e "+-----------------------------------------------+"
+echo -e "| ${couleur_pterodactyl}${couleur_chiffres}7. Re-installer le thème du panel (RESET UI)  ${couleur_panel}|"
+echo -e "|   ${couleur_reinitialisation_texte}- N'affecte pas les machines déjà installées${couleur_panel}|"
+echo -e "|   ${couleur_reinitialisation_texte}- Aucune perte de sauvegarde                ${couleur_panel}|"
+echo -e "+-----------------------------------------------+"
+echo -e "| ${couleur_reinitialisation}${couleur_chiffres}8. Quitter${couleur_panel}                                    |"
+echo -e "+-----------------------------------------------+${couleur_reset}"
+
+read -p "Choisissez une option (1-8) : " choix
+
 
 
     case $choix in
