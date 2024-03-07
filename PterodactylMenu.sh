@@ -20,40 +20,7 @@ fi
 # Le reste du script ici
 
 while true; do
-    # Affichage du menu
-    #echo -e "\e[1;34m+-----------------------------------------------+"
-    #echo -e "|              \e[1;32mPanel Pterodactyl\e[1;34m :              |"
-    #echo -e "+-----------------------------------------------+"
-    #echo -e "| \e[1;36m1. Installer Pterodactyl (Dernière Version)   \e[1;34m|"
-    #echo -e "| \e[1;36m2. Installer MySQL et PhpMyAdmin              \e[1;34m|"
-    #echo -e "|   \e[1;33m- (Dernière Version)                        \e[1;34m|"
-    #echo -e "+-----------------------------------------------+"
-    #echo -e "                         \e[1;36m+"
-    #echo -e "                         \e[1;36m|"
-    #echo -e "                         \e[1;36m↓"
-    #echo -e "\e[1;34m+-----------------------------------------------+"
-    #echo -e "|              \e[1;32mPterodactyl Thème\e[1;34m :              |"
-    #echo -e "+-----------------------------------------------+"
-    #echo -e "| \e[1;36m3. Installer Stellar-V3.3      \e[1;34m|\e[1;36m Ptero 11.x.x\e[1;34m |"
-    #echo -e "| \e[1;36m4. Installer Enigma-V3.9       \e[1;34m|\e[1;36m Ptero 11.x.x\e[1;34m |"
-    #echo -e "| \e[1;36m5. Installer Billing           \e[1;34m|\e[1;36m Ptero 11.x.x\e[1;34m |"
-    #echo -e "| \e[1;36m6. Installer Carbon            \e[1;34m|\e[1;36m Ptero 11.x.x\e[1;34m |"
-    #echo -e "+-----------------------------------------------+"
-    #echo -e "                         \e[1;36m+"
-    #echo -e "                         \e[1;36m|"
-    #echo -e "                         \e[1;36m↓"
-    #echo -e "\e[1;34m+-----------------------------------------------+"
-    #echo -e "|             \e[1;32mRéinitialisation\e[1;34m :                |"
-    #echo -e "+-----------------------------------------------+"
-    #echo -e "| \e[1;36m7. Re-installer le thème du panel (RESET UI)  \e[1;34m|"
-    #echo -e "|   \e[1;33m- N'affecte pas les machines déjà installées\e[1;34m|"
-    #echo -e "|   \e[1;33m- Aucune perte de sauvegarde                \e[1;34m|"
-    #echo -e "+-----------------------------------------------+"
-    #echo -e "| \e[1;31m8. Quitter\e[1;34m                                    |"
-    #echo -e "+-----------------------------------------------+\e[0m"
-    #read -p "Choisissez une option (1-7) : " choix
 
-# Couleurs pour chaque section
 couleur_panel="\e[1;34m"  # Bleu clair
 couleur_panel_texte="\e[1;32m"  # Vert clair
 couleur_pterodactyl="\e[1;36m"  # Cyan clair
@@ -61,9 +28,8 @@ couleur_pterodactyl_texte="\e[1;36m"  # Cyan clair
 couleur_reinitialisation="\e[1;31m"  # Rouge clair
 couleur_reinitialisation_texte="\e[1;32m"  # Vert clair
 couleur_chiffres="\e[1;33m"  # Jaune clair
-couleur_reset="\e[0m"  # Réinitialisation de la couleur
+couleur_reset="\e[0m"
 
-# Afficher le menu avec les couleurs
 echo -e "${couleur_panel}+-----------------------------------------------+"
 echo -e "|              ${couleur_panel_texte}Panel Pterodactyl${couleur_panel} :              |"
 echo -e "+-----------------------------------------------+"
