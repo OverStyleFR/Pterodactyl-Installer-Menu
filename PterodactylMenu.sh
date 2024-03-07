@@ -97,7 +97,7 @@ read -p "Choisissez une option (1-8) : " choix
         7)
             echo "Ré-installer le thème de Pterodactyl. (RESET UI)"
             echo "N'affecte pas les machines déjà installer"
-            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/AutoScriptBash/main/pterodactylpanelreinstall.sh)
+            bash <(curl -s https://github.com/OverStyleFR/AutoScriptBash/raw/main/.assets/pterodactylpanelreinstall.sh)
             ;;
         8)
             echo "Au revoir !"
