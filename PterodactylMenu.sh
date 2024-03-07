@@ -74,6 +74,42 @@ while true; do
     echo -e "| \e[1;31m8. Quitter\e[1;34m                                    |"
     echo -e "+-----------------------------------------------+\e[0m"
 
+    
+    echo -e "\e[1;34m+-------------------------------------------+"
+    echo -e "|                  \e[1;32mMenu\e[1;34m :                  |"
+    echo -e "+-------------------------------------------+"
+    echo -e "| \e[1;36mID\e[1;34m | \e[1;36mOption\e[1;34m                | \e[1;36mDescription\e[1;34m      |"
+    echo -e "+-------------------------------------------+"
+    echo -e "| \e[1;36m 1\e[1;34m | \e[1;36mInstaller Pterodactyl\e[1;34m | \e[1;36mDernière Version\e[1;34m|"
+    echo -e "+-------------------------------------------+"
+    echo ""
+    echo -e "\e[1;34m+-----------------------------------------------------------+"
+    echo -e "|                       \e[1;32mThème\e[1;34m :                       |"
+    echo -e "+-----------------------------------------------------------+"
+    echo -e "| \e[1;36mID\e[1;34m | \e[1;36mOption\e[1;34m                | \e[1;36mPtero Version\e[1;34m|"
+    echo -e "+-----------------------------------------------------------+"
+    echo -e "| \e[1;36m 2\e[1;34m | \e[1;36mInstaller Stellar-V3.3\e[1;34m| \e[1;36mPtero 11.x.x\e[1;34m  |"
+    echo -e "| \e[1;36m 3\e[1;34m | \e[1;36mInstaller Enigma-V3.9\e[1;34m | \e[1;36mPtero 11.x.x\e[1;34m  |"
+    echo -e "| \e[1;36m 4\e[1;34m | \e[1;36mInstaller Billing\e[1;34m     | \e[1;36mPtero 11.x.x\e[1;34m  |"
+    echo -e "| \e[1;36m 5\e[1;34m | \e[1;36mInstaller Carbon\e[1;34m      | \e[1;36mPtero 11.x.x\e[1;34m  |"
+    echo -e "+-----------------------------------------------------------+"
+    echo -e "| \e[1;36m 6\e[1;34m | \e[1;36mRe-installer le thème\e[1;34m | \e[1;36mRESET UI\e[1;34m     |"
+    echo -e "|    |                         | N'affecte pas les machines\e[1;34m|"
+    echo -e "|    |                         | déjà installées\e[1;34m       |"
+    echo -e "+-----------------------------------------------------------+"
+    echo -e "| \e[1;36m 7\e[1;34m | \e[1;36mInstaller MySQL et PhpMyAdmin\e[1;34m | \e[1;36mDernière Version\e[1;34m|"
+    echo -e "+-------------------------------------------+"
+    echo -e "| \e[1;31m 8\e[1;34m | \e[1;31mQuitter\e[1;34m             |                       |"
+    echo -e "+-------------------------------------------+"
+    echo -e "\e[1;30m                                         |"
+    echo -e "          +---------------------+          |"
+    echo -e "          |                     |          |"
+    echo -e "          V                     V          V"
+    echo -e "    +-----------------+ +-------------------+"
+    echo -e "    |                 | |                   |"
+    echo -e "    V                 V V                   V\e[0m"
+
+
     # Lecture du choix de l'utilisateur
     read -p "Choisissez une option (1-7) : " choix
 
