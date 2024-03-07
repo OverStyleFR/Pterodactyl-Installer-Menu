@@ -95,8 +95,8 @@ read -p "Choisissez une option (1-8) : " choix
             bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/theme_carbon.sh)
             ;;
         7)
-            #echo "Ré-installer le thème de Pterodactyl. (RESET UI)"
-            #echo "N'affecte pas les machines déjà installer"
+            echo "Ré-installer le thème de Pterodactyl. (RESET UI)"
+            echo "N'affecte pas les machines déjà installer"
             bash <(curl -s https://github.com/OverStyleFR/AutoScriptBash/raw/main/.assets/pterodactylpanelreinstall.sh)
             ;;
         8)
