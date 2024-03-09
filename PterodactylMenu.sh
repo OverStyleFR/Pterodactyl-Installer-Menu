@@ -74,7 +74,7 @@ read -p "Choisissez une option (1-8) : " choix
         2)
             echo "Installer MySQL et PhpMyAdmin"
             echo "  - (Dernière Version)"
-            bash <(curl -s lien raw ici)
+            bash <(curl -s https://raw.githubusercontent.com/OverStyleFR/Pterodactyl-Installer-Menu/V2/.assets/pma%26mysql_installation.sh)
             ;;
         3)
             echo "Installation du thème Stellar v3.3."
