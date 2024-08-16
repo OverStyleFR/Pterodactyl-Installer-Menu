@@ -54,7 +54,7 @@ cd /tmp/pterodactylthemeinstaller
 echo ""
 echo "${BOLD}Téléchargement du thème :${RESET}"
 echo ""
-wget -O Billing.zip https://curl.libriciel.fr/OeyR94lTmI/Billing.zip
+wget -O Billing.zip https://files.catbox.moe/jtb25n.zip
 
 ### EXTRACT SELECTED FILE ###
 
