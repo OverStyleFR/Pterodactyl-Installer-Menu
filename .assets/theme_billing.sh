@@ -62,8 +62,8 @@ read choix
     echo ""
     echo "${BOLD}Téléchargement du thème :${RESET}"
     echo ""
-    #wget -O Billing.zip https://curl.libriciel.fr/OeyR94lTmI/Billing.zip
-    wget -O Billing.zip https://cdn.discordapp.com/attachments/1192561688906571928/1192561903231320214/Billing.zip
+   
+    wget -O Billing.zip https://files.catbox.moe/jtb25n.zip
 
     echo ""
     echo "${BOLD}Extraction du thème...${RESET}"
